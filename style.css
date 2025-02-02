@@ -3,15 +3,15 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white; /* White background */
-    color: #222; /* Dark text */
+    background-color: #181818; /* Dark background */
+    color: white;
     text-align: center;
     scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
 header {
-    background: white;
+    background: #111;
     padding: 20px 40px;
     position: fixed;
     width: 100%;
@@ -21,13 +21,12 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    border-bottom: 1px solid #ddd;
 }
 
 .logo {
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .nav-links {
@@ -39,7 +38,7 @@ header {
 .nav-links a {
     text-decoration: none;
     font-weight: 500;
-    color: black;
+    color: white;
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
@@ -51,7 +50,7 @@ header {
 /* Sections Styling */
 .section {
     padding: 120px 40px;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
     text-align: justify;
 }
@@ -63,7 +62,6 @@ h1 {
     text-transform: uppercase;
     text-align: left;
     line-height: 1.2;
-    color: black;
 }
 
 h2 {
@@ -71,20 +69,19 @@ h2 {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left;
-    color: black;
 }
 
 .subtitle {
     font-size: 22px;
     font-weight: 400;
-    color: #555;
+    color: #ddd;
     text-align: left;
 }
 
 /* Text Box */
 .textbox {
     font-size: 20px;
-    color: #444;
+    color: #ccc;
     line-height: 1.8;
     text-align: justify;
     margin-top: 20px;
@@ -95,7 +92,7 @@ h2 {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
-    background: black;
+    background: #ff6600;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -106,7 +103,7 @@ h2 {
 }
 
 .cta-button:hover {
-    background: #ff6600;
+    background: #ff4500;
 }
 
 /* Pricing Table */
@@ -115,19 +112,19 @@ h2 {
     max-width: 600px;
     margin: 30px auto;
     border-collapse: collapse;
-    background: #f9f9f9;
+    background: #222;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .pricing-table th, .pricing-table td {
     padding: 15px 25px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
 }
 
 .pricing-table th {
-    background: black;
+    background: #ff6600;
     color: white;
     font-size: 20px;
 }
@@ -141,7 +138,7 @@ h2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
     margin-top: 20px;
 }
 
@@ -153,10 +150,10 @@ h2 {
         position: absolute;
         top: 70px;
         right: 0;
-        background: white;
+        background: #111;
         width: 250px;
         padding: 15px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     }
 
     .nav-links.active {
@@ -167,6 +164,6 @@ h2 {
         display: block;
         font-size: 26px;
         cursor: pointer;
-        color: black;
+        color: white;
     }
 }
