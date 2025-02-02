@@ -1,73 +1,288 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Sun Feb 02 2025 14:02:57 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="laura-isabels-groovy-proj-ce923bf689dca.webflow.io" data-wf-page="679f381dc7e34c81f66db472" data-wf-site="679f381dc7e34c81f66db46f" data-wf-status="1">
   <head>
     <meta charset="utf-8" />
     <title>Silvestri re-brain - Qualifizierte Nachhilfe von Studenten</title>
     <meta content="Wir geben immer 100%. Schnelle, flexible Nachhilfevermittlung ab 35.- / 60min. Mathematik, Französisch, Deutsch, Physik, Biologie und vieles mehr. Jedes Fach, jede Region." name="description" />
     <meta content="Silvestri re-brain - Qualifizierte Nachhilfe von Studenten" property="og:title" />
+    <meta content="Wir geben immer 100%. Schnelle, flexible Nachhilfevermittlung ab 35.- / 60min. Mathematik, Französisch, Deutsch, Physik, Biologie und vieles mehr. Jedes Fach, jede Region." property="og:description" />
+    <meta content="https://cdn.prod.website-files.com/610b9a5841337813362f8868/610eea1a93380f163bda31a7_querformat_isabel.jpg" property="og:image" />
+    <meta content="Silvestri re-brain - Qualifizierte Nachhilfe von Studenten" property="twitter:title" />
+    <meta content="Wir geben immer 100%. Schnelle, flexible Nachhilfevermittlung ab 35.- / 60min. Mathematik, Französisch, Deutsch, Physik, Biologie und vieles mehr. Jedes Fach, jede Region." property="twitter:description" />
+    <meta content="https://cdn.prod.website-files.com/610b9a5841337813362f8868/610eea1a93380f163bda31a7_querformat_isabel.jpg" property="twitter:image" />
+    <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    
-    <!-- Link to local CSS file -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    
-    <!-- Google Fonts -->
+    <meta content="Webflow" name="generator" />
+    <link href="https://cdn.prod.website-files.com/679f381dc7e34c81f66db46f/css/laura-isabels-groovy-proj-ce923bf689dca.webflow.6055caa09.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-    
-    <!-- Font Loading Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script type="text/javascript">
       WebFont.load({
-        google: { families: ["Open Sans:300,400,600,700", "Lato:100,300,400,700", "Oswald:200,300,400,500,600,700", "Montserrat:100,200,300,400,500,600,700,800,900"] }
+        google: {
+          families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "Oswald:200,300,400,500,600,700", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+        }
       });
     </script>
-    
-    <!-- Local Favicon -->
-    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
-    <link href="images/webclip.jpg" rel="apple-touch-icon" />
+    <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+    <link href="https://cdn.prod.website-files.com/679f381dc7e34c81f66db46f/679f381dc7e34c81f66db4c0_favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://cdn.prod.website-files.com/679f381dc7e34c81f66db46f/679f381dc7e34c81f66db4c1_Webclip.jpg" rel="apple-touch-icon" />
+    <style>
+      body {
+        overflow: scroll;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      .is-virtual-scroll {
+        overflow: hidden;
+      }
+
+      .is-native-scroll.y-scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      .is-native-scroll.x-scroll {
+        overflow-y: hidden;
+        overflow-x: scroll;
+      }
+
+      .vs-section {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        will-change: transform;
+      }
+
+      .vs-scrollbar {
+        display: block;
+        position: absolute;
+        transition: transform .6s;
+      }
+
+      .vs-scrollbar.vs-vertical {
+        top: 0;
+        right: -5px;
+        bottom: 0;
+        width: 15px;
+        height: 100%;
+        transform: translate3d(5px, 0, 0);
+      }
+
+      .vs-scrollbar.vs-horizontal {
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 15px;
+        transform: translate3d(0, 5px, 0);
+      }
+
+      .is-dragging .vs-scrollbar.vs-horizontal,
+      .is-dragging .vs-scrollbar.vs-vertical,
+      .vs-scrollbar.vs-horizontal:hover,
+      .vs-scrollbar.vs-vertical:hover {
+        transform: none;
+      }
+
+      .vs-scrollbar .vs-scrolldrag {
+        width: 100%;
+        height: auto;
+        background: #ccc;
+        cursor: pointer;
+      }
+
+      .vs-scroll-view {
+        position: relative;
+        width: 1px;
+      }
+    </style>
+    <style>
+      .skew-section {
+        will-change: transform
+      }
+    </style>
   </head>
-  <body>
-    <!-- Logo -->
-    <a href="/" class="link-block-4 w-inline-block w--current">
-      <img src="images/Icon1.png" width="62" alt="Logo" class="image-15" />
-    </a>
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-      <button class="menu-toggle">☰</button>
-      <div class="nav-menu">
-        <a href="#About">ABOUT</a>
-        <a href="#Kontakt">KONTAKT</a>
-        <a href="#Bewerbung">BEWERBUNG</a>
-        <a href="#Preise">PREISE</a>
+  <body class="body"><a data-w-id="11b79c99-6db6-aa62-7898-ff01150e9ad0" href="/" aria-current="page" class="link-block-4 w-inline-block w--current"><img src="https://cdn.prod.website-files.com/679f381dc7e34c81f66db46f/679f381dc7e34c81f66db4a7_Icon1.png" loading="lazy" width="62" alt="" class="image-15" /></a>
+    <div style="opacity:1" class="black"></div>
+    <div class="white"></div>
+    <div class="scroll-bar-wrapper">
+      <div class="scroll-bar"></div>
+    </div>
+    <div class="nav-wrapper">
+      <div data-collapse="small" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-4 w-nav">
+        <div class="container-5 w-container">
+          <nav role="navigation" class="nav-menu-3 w-nav-menu"><a href="/" data-w-id="ac081949-9615-7f77-d206-797c7a7e61f6" aria-current="page" class="nav-link-5 w-nav-link w--current">HOME</a><a href="#About" data-w-id="ac081949-9615-7f77-d206-797c7a7e61f8" class="nav-link-5 w-nav-link">ABOUT</a><a href="#Kontakt" data-w-id="f2922513-e127-e034-43ea-19ed067af2db" class="nav-link-5 w-nav-link">KONTAKT</a><a href="#Bewerbung" data-w-id="ac081949-9615-7f77-d206-797c7a7e61fa" class="nav-link-5 w-nav-link">BEWERBUNG</a><a href="#Preise" class="nav-link-5 w-nav-link">PREISE</a></nav>
+          <div class="menu-button-5 w-nav-button">
+            <div class="icon-5 w-icon-nav-menu"></div>
+          </div>
+        </div>
       </div>
-    </nav>
-    
-    <!-- Content Sections -->
-    <section id="About">
-      <h1>Silvestri Re-Brain</h1>
-      <p>Private Nachhilfe von Studenten. Wir helfen dir dabei, deine Ziele zu erreichen.</p>
-    </section>
-    
-    <section id="Kontakt">
-      <h1>Kontakt</h1>
-      <p>Email: <a href="mailto:laura.silvestri@sunrise.ch">laura.silvestri@sunrise.ch</a></p>
-      <p>Mobil: <a href="tel:+41763981972">+41 76 398 19 72</a></p>
-    </section>
-    
-    <section id="Preise">
-      <h1>Preise</h1>
-      <p>35CHF / 60min (Unterricht von GymnasiastInnen)</p>
-      <p>40CHF / 60min (Unterricht von StudentInnen)</p>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-      <p>Copyright © 2025 Silvestri re-brain. All rights reserved.</p>
+    </div>
+    <div class="section-c">
+      <div class="div-heading">
+        <div class="subheader-submain-copy">Private nachhilfe von studenten</div>
+        <h1 class="heading-main">SILVESTRI RE-BRAIN</h1>
+        <h1 class="heading-main">deine <span class="text-span-10">ziele </span>sind zum greifen nah.</h1>
+        <div class="subheader-submain">Wir helfen dir dabei, sie zu erreichen.</div>
+      </div>
+    </div>
+    <div class="section-c-img"></div>
+    <div class="infobox">
+      <div class="section"></div>
+      <div class="section"></div>
+      <div class="dummy-data">
+        <div class="div-heading">
+          <h1 class="heading-main"><span class="hero-title-span">WIR LEISTEN DIE BESTE NACHHILFE.</span></h1>
+          <p class="sub-text">Wir leisten die beste Nachhilfe im Raum Baden und Zürich - und zwar schon seit 2018. Mit einem Team von über 40 Nachhilfekräften bieten wir eine vielfältige Expertise für<strong> jedes Fach und jedes Niveau.</strong><br />‍</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-c">
+      <div class="div-heading">
+        <h1 class="heading-main">Jedes fach,<br />jede stufe.<br /></h1>
+        <div class="typed-text-wrapper">
+          <div class="typed-text"></div>
+        </div>
+      </div>
+    </div>
+    <div id="Bewerbung" class="section-c">
+      <div class="div-heading">
+        <h1 class="heading-main">ICH Will nachhilfe geben.</h1>
+        <div class="sub-text"><span>Du hast schon Erfahrungen mit Nachhilfe unterrichten? Genial. Du hast noch </span><span class="text-span-21">keine Erfahrungen ?</span><span> Auch genial. Wir werden dich coachen, wenn du dich noch etwas unsicher fühlst. Ein </span><span class="text-span-23">Rohdiamant</span><span> muss zuerst auch immer geschliffen werden.<br /><br />Wir sind immer auf der Suche nach weiterer Unterstützung. Falls du GymnasiastIn/StudentIn bist und gerne Nachhilfe leisten möchtest, kannst du uns gerne eine Email (siehe unten) mit deiner Bewerbung senden. </span></div>
+      </div>
+    </div>
+    <div id="Kontakt" class="section-c">
+      <div class="div-heading">
+        <div class="columns w-row">
+          <div class="column w-col w-col-1"></div>
+          <div class="column-2 w-col w-col-11">
+            <h1 class="heading-main">KONTAKT</h1>
+            <p class="sub-text"><span class="text-span-19"><strong class="bold-text-3">Laura Isabel Silvestri<br /></strong></span>‍<br />Email: <a href="mailto:laura.silvestri@sunrise.ch?subject=Nachhilfe" class="link-6">laura.silvestri@sunrise.ch</a><br />Mobil tel. <a href="tel:+41763981972" class="link-5">+41 76 398 19 72</a><br /><br />‍<br /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Preise" class="section-c">
+      <div class="div-heading">
+        <h1 class="heading-main">PREISE<span class="text-span-6"><br /></span></h1>
+        <p class="sub-text">Es ist uns ein Anliegen, eine besonders passende Nachhilfe zu ermöglichen. Je nach Stufe sind verschiedene Kenntnisse und Kompetenzen erforderlich, weswegen wir die Preise fair gestalten möchten.<br /><br />35CHF / 60min (Unterricht von GymnasiastInnen)<br />40CHF / 60min (Unterricht von StudentInnen)<br /><br />Unsere Nachhilfekräfte sind stets bemüht, sich ihre Zeit effektiv einzuteilen. Deswegen fallen bei Nicht-Absagen innerhalb 24h vor dem  Termin trotzdem Kosten an. <br /><br /><br /><br /><br /></p>
+      </div>
+    </div>
+    <div id="About" class="section-c">
+      <div class="div-heading">
+        <h1 class="heading--main">saletti, <br />wir sind <br />silvestri re-brain</h1>
+        <div class="sub-text">Wir sind ein kunterbunter Mix aus Gymnasiasten und Studenten, doch eins verbindet uns: Wir haben es uns zur Aufgabe gemacht, all unsere Erfahrungen - ja, dazu gehören nicht nur Erfolge - mit dir zu teilen, um dich optimal für deine Schulkarriere zu rüsten. </div>
+      </div>
+    </div>
+    <div class="section-c--img">
+      <div class="div--heading">
+        <h1 class="heading--main-white">freut mich, <br />ich bin laura.</h1>
+        <p class="sub-text-white">Ich bin die Gründerin von Silvestri Re-brain und gleichzeitig deine erste Ansprechperson. Wünsche, Fragen, Probleme, Ideen - ich habe immer ein offenes Ohr für dich. Zudem leite ich die ganze Vermittlung, das Marketing und die Administration. <br /><br />Ich habe das Gefühl, dass du bereits ziemlich clever bist - du kümmerst dich schliesslich um deine Zukunft! Was du brauchst, ist ein wenig Unterstützung, und da suchst du genau am richtigen Ort: Wir sind Experten darin, was richtiges Lernen und Motivation angeht.<br />‍<br />‍</p>
+      </div>
+    </div>
+    <div class="w-embed">
+      <style>
+        .outline-heading {
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 1px #ffffff;
+        }
+      </style>
+    </div>
+    <footer id="footer" class="footer">
+      <div class="w-container">
+        <div class="text-block-3">Copyright © 2025 Silvestri re-brain. All rights reserved.</div>
+      </div>
     </footer>
-    
-    <!-- JavaScript to handle navigation and menu toggle -->
-    <script src="script.js" type="text/javascript"></script>
+    <div class="inverted-cursor-wrapper">
+      <div class="w-embed">
+        <style>
+          .cursor-wrapper-3 {
+            pointer-events: none;
+          }
+        </style>
+      </div>
+      <div class="w-embed">
+        <style>
+          .cursor--wrapper {
+            pointer-events: none;
+            mix-blend-mode: difference;
+          }
+
+          .cursor--wrapper {
+            mix-blend-mode: difference;
+          }
+        </style>
+      </div>
+      <div class="cursor--wrapper">
+        <div data-w-id="62a24534-832a-ced6-1d39-9b77d6c2a86d" class="cursor"></div>
+        <div class="cursor-2 _3">
+          <div class="circle-text">Case Study</div>
+        </div>
+        <div class="cursor-backup"></div>
+      </div>
+    </div>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=679f381dc7e34c81f66db46f" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.prod.website-files.com/679f381dc7e34c81f66db46f/js/webflow.0d1d3c7b.da499de0b9845c16.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script>
+      var typed4 = new Typed('.typed-text', {
+        strings: ['Sogar Physik und Mathematik.', 'E = mc²', 'e^i⋅x =cos(x)+i⋅sin(x)', 'Nous savons parler le francais.', 'No worries. We can help to improve your english.', 'Du willst chinesisch lernen?', 'Du willst chinesisch lernen?', '我们会说中文。'],
+        typeSpeed: 75,
+        backSpeed: 25,
+        bindInputFocusEvents: true,
+        loop: true,
+        cursorChar: '',
+        backDelay: 1000,
+        startDelay: 1000
+      });
+    </script>
+    <script src="https://cjh.sfo2.cdn.digitaloceanspaces.com/Smooth-Scroll/smooth-scrolling.js"></script>
+
+    <script>
+      var scroll = new Smooth({
+        native: true,
+        preload: true
+      });
+      scroll.init();
+    </script>
+    <script>
+      function delay(URL) {
+        setTimeout(function() {
+          window.location = URL
+        }, 850);
+      }
+    </script>
+    <script>
+      function delay(URL) {
+        setTimeout(function() {
+          window.location = URL
+        }, 850);
+      }
+    </script>
   </body>
 </html>
