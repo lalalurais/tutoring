@@ -1,83 +1,148 @@
+/* General Page Styling */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: white; /* White background */
+    color: #222; /* Dark text */
+    text-align: center;
     scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
 header {
-    background: #333;
-    padding: 15px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: white;
+    padding: 20px 40px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-}
-
-nav {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-.nav-links li {
-    display: inline;
+    gap: 30px;
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
-.burger-menu {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+.nav-links a:hover {
+    color: #ff6600;
 }
 
+/* Sections Styling */
 .section {
-    padding: 100px 20px;
-    text-align: center;
+    padding: 120px 40px;
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+}
+
+/* Big Title Styling */
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.2;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
 }
 
 .subtitle {
-    font-size: 24px;
-    color: gray;
+    font-size: 22px;
+    font-weight: 400;
+    color: #555;
+    text-align: left;
 }
 
+/* Text Box */
 .textbox {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+    margin-top: 20px;
 }
 
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff6600;
+}
+
+/* Pricing Table */
 .pricing-table {
-    width: 60%;
-    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
     border-collapse: collapse;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table th, .pricing-table td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
 }
 
+.pricing-table th {
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+.pricing-table td {
+    font-size: 18px;
+}
+
+/* Profile Picture */
 .profile-picture img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 
 /* Responsive Burger Menu */
@@ -86,11 +151,12 @@ nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 0;
-        background: #333;
-        width: 200px;
-        padding: 10px;
+        background: white;
+        width: 250px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -99,5 +165,8 @@ nav {
 
     .burger-menu {
         display: block;
+        font-size: 26px;
+        cursor: pointer;
+        color: black;
     }
 }
